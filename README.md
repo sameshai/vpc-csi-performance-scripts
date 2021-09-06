@@ -10,11 +10,11 @@
 # measure_pod_up_time
 
 - Export below values
-export SCALE_DOWN_PODS=0
-export ITERATIONS=10
-export APP_NAME=nginx
-export POD_NAME=web
-export SCALE_UP_PODS=6
-export NO_OF_VOLUMES=11
+   - export SCALE_DOWN_PODS=0
+   - export ITERATIONS=10
+   - export APP_NAME=nginx
+   - export POD_NAME=web
+   - export SCALE_UP_PODS=6
+   - export NO_OF_VOLUMES=11
 - Run ./performTest.sh
 
