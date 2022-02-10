@@ -95,7 +95,7 @@ do
         kubectl get pods -l app=$APP_NAME | grep 'Running' | wc -l | grep $SCALE_UP_PODS; rc=$?
 
         if [[ $rc -eq 0 ]]; then
-            echo "All Pods are in running state"
+            echo "All Pods for iteration $x are in running state in $duration time" >> Iteration.log
             echo "Scaling up completed.."
             break
         fi
